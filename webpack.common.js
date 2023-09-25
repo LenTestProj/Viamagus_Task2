@@ -9,7 +9,6 @@ module.exports = {
     publicPath: "/",
   },
   devServer: {
-    publicPath: "/",
     historyApiFallback: true,
   },
   plugins: [
