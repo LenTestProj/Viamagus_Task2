@@ -47,7 +47,7 @@ const Posts = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        paddingTop: "3rem",
+        paddingTop: "4rem",
       }}
     >
       <h2>Posts</h2>
