@@ -1,0 +1,20 @@
+.singlePostContainer {
+  margin: 0.6em;
+  padding: 2% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.singlePostTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  margin: 0.4em 0;
+  text-decoration: underline;
+}
+
+.singlePostBody {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  margin: 0.4em 0;
+}

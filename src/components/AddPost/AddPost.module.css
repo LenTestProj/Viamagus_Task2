@@ -1,0 +1,114 @@
+.main {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.newPostFormContainer {
+  border: roduc 1px solid rgb(211, 223, 227, 0.7);
+  border-radius: 10px;
+  padding: 1.4% 2%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  /* align-items: center; */
+}
+
+.newPostFormTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  margin: 0.2em 0;
+  border-bottom: 2px dashed rgb(211, 223, 227, 0.3);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.nameSection {
+  display: flex;
+  border-bottom: 2px solid rgb(211, 223, 227, 0.3);
+  padding: 2.5%;
+}
+
+.descriptionSection {
+  display: flex;
+  border-bottom: 2px solid rgb(211, 223, 227, 0.3);
+  padding: 2.5%;
+}
+
+.submitButtonSection {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.submitButton {
+  margin-top: 2%;
+  padding: 1.6%;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.nameInput {
+  flex: 2;
+}
+
+.nameInputField {
+  background: rgb(211, 223, 227);
+  font-size: 1em;
+  width: 100%;
+}
+
+.nameText {
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+.descriptionInput {
+  flex: 2;
+}
+
+.descriptionInputField {
+  background: rgb(211, 223, 227);
+  font-size: 1.2rem;
+  width: 100%;
+  height: 10rem;
+}
+
+.descriptionText {
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: rgb(250, 145, 145);
+  font-size: 0.9rem;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background: rgb(211, 223, 227);
+}
+
+@media (max-width: 600px) {
+  .newPostFormContainer {
+    width: 80%;
+  }
+
+  .nameInputField {
+    font-size: 0.8em;
+  }
+
+  .nameText {
+    font-size: 1.1rem;
+  }
+
+  .nameInputField {
+    margin-bottom: 3%;
+  }
+
+  .descriptionInputField {
+    font-size: 0.6em;
+  }
+}
