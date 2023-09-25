@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 import Post from "../Post/Post";
 import "./Posts.css";
 import PageNumbers from "../PageNumbers/PageNumbers";
 import { useLocation, useParams } from "react-router-dom";
+import { fetchPosts } from "../../store/slices/postsSlice";
 
 const Posts = () => {
   const location = useLocation();
+  const dispatch = useDispatch();
 
   const posts = useSelector((state) => state.posts.posts);
   const postStatus = useSelector((state) => state.posts.status);
@@ -16,7 +18,19 @@ const Posts = () => {
   useEffect(() => {
     if (location.search.length > 0) {
       const currentPage = location.search.split("=")[1];
-      console.log("The current page is: " + location.search.split("=")[1]);
+      console.log("The current page is: " + currentPage);
+    } else {
+      dispatch(
+        fetchPosts({
+          currentPage: 1,
+          isPrevClicked: false,
+          isNextClicked: false,
+          isLastClicked: false,
+          secondPage: 2,
+          thirdPage: 3,
+          fourthPage: 4,
+        })
+      );
     }
   }, [location.search.length]);
 
